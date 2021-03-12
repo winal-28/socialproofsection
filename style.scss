@@ -33,6 +33,18 @@ main {
 }
 .reviews {
   grid-area: reviews;
+  .review {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 4%;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    margin: 3%;
+    justify-content: space-around;
+    h4 {
+      color: $primaryTextColor;
+    }
+  }
 }
 .comments {
   grid-area: comments;

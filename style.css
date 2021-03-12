@@ -46,6 +46,23 @@ main {
   grid-area: reviews;
 }
 
+.reviews .review {
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 4%;
+  background-color: #f7f2f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.reviews .review h4 {
+  color: #502050;
+}
+
 .comments {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
