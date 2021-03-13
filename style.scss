@@ -29,11 +29,13 @@ main {
     color: grey;
     font-size: 15px;
     line-height: 25px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.048);
   }
 }
 .reviews {
   grid-area: reviews;
   .review {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.048);
     font-size: 15px;
     border-radius: 10px;
     padding: 4%;
@@ -41,9 +43,16 @@ main {
     display: flex;
     margin: 3%;
     justify-content: space-around;
+    align-items: center;
     h4 {
       color: $primaryTextColor;
     }
+  }
+  .review-1 {
+    transform: translateX(-40px);
+  }
+  .review-3 {
+    transform: translateX(40px);
   }
 }
 .comments {
