@@ -1,4 +1,5 @@
 $primaryTextColor: hsl(300, 43%, 22%);
+//remove all the basic styling
 * {
   margin: 0;
   padding: 0;
@@ -126,5 +127,27 @@ main {
     &:hover {
       color: hsl(333, 80%, 67%);
     }
+  }
+}
+
+// mobile responsiveness
+@media (max-width: 800px) {
+  main {
+    grid-template:
+      "banner"
+      "reviews"
+      "comments";
+    text-align: center;
+  }
+  .review {
+    transform: translateX(0px) !important;
+    flex-direction: column;
+  }
+  .comments {
+    flex-direction: column;
+    align-items: center;
+  }
+  .attribution {
+    margin-top: 5%;
   }
 }

@@ -184,4 +184,31 @@ main {
 .attribution a:hover {
   color: #ee68a4;
 }
+
+@media (max-width: 800px) {
+  main {
+    grid-template: "banner" "reviews" "comments";
+    text-align: center;
+  }
+  .review {
+    -webkit-transform: translateX(0px) !important;
+            transform: translateX(0px) !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comments {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .attribution {
+    margin-top: 5%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
