@@ -8,8 +8,8 @@ $primaryTextColor: hsl(300, 43%, 22%);
 body {
   display: flex;
   min-height: 100vh;
-  overflow: hidden;
   padding: 10%;
+  padding-bottom: 0;
 }
 main {
   display: grid;
@@ -49,12 +49,29 @@ main {
     }
   }
   .review-1 {
-    transform: translateX(-40px);
+    transform: translateX(-50px);
   }
   .review-3 {
-    transform: translateX(40px);
+    transform: translateX(50px);
   }
 }
 .comments {
   grid-area: comments;
+  position: relative;
+  width: 100%;
+  .person {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+    .pfp {
+      border-radius: 50%;
+      width: 40px;
+    }
+  }
+  .comment {
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px;
+    width: 500px;
+  }
 }
