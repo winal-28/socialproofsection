@@ -13,12 +13,17 @@ body {
   min-height: 100vh;
   padding: 10%;
   padding-bottom: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "banner reviews" "comments comments";
+  width: 100%;
 }
 
 .banner {
@@ -62,10 +67,17 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .reviews .review h4 {
   color: #502050;
+}
+
+.reviews .review:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
 }
 
 .reviews .review-1 {
@@ -85,6 +97,14 @@ main {
   grid-area: comments;
   position: relative;
   width: 100%;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5%;
 }
 
 .comments .person {
@@ -95,19 +115,69 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .comments .person .pfp {
   border-radius: 50%;
   width: 40px;
+  margin-right: 20px;
+}
+
+.comments .person .buyer-status {
+  color: #ee68a4;
+  font-weight: lighter;
 }
 
 .comments .comment {
+  color: white;
   background-color: #502050;
-  padding: 40px;
-  width: 500px;
+  padding: 30px;
+  width: 340px;
+  height: 240px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.048);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.048);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.comments .comment .quote {
+  font-size: 13px;
+  color: whitesmoke;
+  line-height: 20px;
+}
+
+.comments .comment:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.377);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.377);
+}
+
+.comments .comment2 {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.comments .comment3 {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+.attribution {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.attribution a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #502050;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.attribution a:hover {
+  color: #ee68a4;
 }
 /*# sourceMappingURL=style.css.map */
