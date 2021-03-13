@@ -11,6 +11,11 @@ body {
   padding: 10%;
   padding-bottom: 0;
   flex-direction: column;
+  overflow-x: hidden;
+  background-image: url("/images/bg-pattern-top-desktop.svg"),
+    url("/images/bg-pattern-bottom-desktop.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
 }
 main {
   display: grid;
